@@ -1,0 +1,319 @@
+    1  code .
+    2  mkdir OBLab
+    3  rmdir
+    4  rmdir OBLab
+    5  mkdir OSLab
+    6  cd OSLsb
+    7  cd OSLab
+    8  mkdir Week1 Week2 Week3
+    9  ls
+   10  cd Week1
+   11  touch f1 f2 f3
+   12  ls
+   13  pwd
+   14  ls -l
+   15  ls -l .
+   16  touch .git
+   17  touch .gitignore
+   18  ls
+   19  ls -l
+   20  ls -a
+   21  ls -la
+   22  ls -lA
+   23  ls -l -A
+   24  find . -name ".*"
+   25  find .
+   26  find . "./f*"
+   27  find . ".f*"
+   28  find . ".*"
+   29  find . -name ".*"
+   30  find . -name ".f*"
+   31  find . -name "./f*"
+   32  find . -wholename "./f*"
+   33  *
+   34  ls *
+   35  ls
+   36  ls -lA | grep "f*"
+   37  ls -lA | grep "f*" -v
+   38  ls -lA | grep -v "f*" 
+   39  cd ..
+   40  vi exam
+   41  sh exam.sh
+   42  mv test.txt newtext.txt
+   43  sh exam.sh
+   44  cd level3
+   45  mkdir level3
+   46  cd level3
+   47  touch apple Ant ball cat Axe
+   48  ls | grep "^[aA]" 
+   49  ls | grep "[aA]*" 
+   50  ls | grep "^[aA]*" 
+   51  ls | grep "^[aA]e$" 
+   52  ls | grep "^[aA]*e$" 
+   53  ls | grep "^[aA].e$" 
+   54  pwd >> info.txt
+   55  date >> info.txt
+   56  ls >> info.txt
+   57  cd ..
+   58  mkdir sec
+   59  touch data1.txt  data2.txt  Data3.txt  report.txt  result.txt
+   60  cd sec
+   61  touch data1.txt  data2.txt  Data3.txt  report.txt  result.txt
+   62  ls | grep "*.txt"
+   63  ls | grep *.txt
+   64  ls | grep data*
+   65  ls
+   66  ls data*
+   67  ls | grep "^[dD]ata."
+   68  ls | grep "^[dD]"
+   69  ls | grep "*.txt"
+   70  ls | grep "*.txt$"
+   71  ls | grep ".txt$"
+   72  ls | grep ".txt"
+   73  ls r*
+   74  ls .txt
+   75  ls *.txt
+   76  ls | wc 6
+   77  ls | wc -6
+   78  wc
+   79  ls | wc
+   80  ls
+   81  ls | wc -c
+   82  ls | wc -c *
+   83  ls | grep "[A-Za-z0-9]{6}"
+   84  ls | grep -v "^d"
+   85  ls -d
+   86  ls -c
+   87  ls | wc -l
+   88  grep "^A"
+   89  grep "^A"  student.txt
+   90  cat student.txt | wc -l
+   91  cat student.txt | wc -w
+   92  cat student.txt | grep "Ravi"
+   93  ls .txt
+   94  ls *.txt
+   95  ls *.txt | cat
+   96  ls *.txt | cat -file
+   97  ls *.txt | cat -n
+   98  ls *.txt | cat -l
+   99  grep "error" -n log.txt 
+  100  head -5 student.txt | tail -5 student.txt
+  101  pwd >> info.txt | ls >> info.txt | ls | wc -l
+  102  pwd >> info.txt | ls >> info.txt | ls | wc -l >> info.txt
+  103  ls a*
+  104  ls | sort
+  105  grep "Linux" linux.txt | wc -l
+  106  cat *.txt
+  107  cd week6
+  108  gcc fcfs.c
+  109  sudo apt install gcc
+  110  gcc fcfs.c -o fcfs.exe
+  111  gcc fcfs.c 
+  112  ./a.out
+  113  gcc fcfs.c 
+  114  ./a.out
+  115  gcc fcfs.c 
+  116  ./a.out
+  117  gcc fcfs.c 
+  118  ./a.out
+  119  gcc sjf.c 
+  120  ./a.out
+  121  gcc sjf.c 
+  122  ./a.out
+  123  ls | wc
+  124  ls | wc -l
+  125  ls | wc -w
+  126  ls | wc -c
+  127  ls -l | wc
+  128  ls ???
+  129  ls ???.txt
+  130  ls "???.txt"
+  131  ls *.txt
+  132  ls -d
+  133  cd sec
+  134  cd ..
+  135  ls
+  136  ls ???
+  137  ls -l | cut d" " f2
+  138  cut --help
+  139  ls -l | cut d" " f2-4
+  140  ls -l | cut d"  " f2-4
+  141  ls -l
+  142  ls -l | cut d"  " 
+  143  ls -l | cut d" " f2-4
+  144  ls -l | cut -d" " -f2-4
+  145  ls -l | cut -d" " -f2-7
+  146  ls -l | cut -d" " -f1-7
+  147  vi fruit.sh
+  148  sh fruit.sh
+  149  cd week10
+  150  gcc optimal.c -lpthread
+  151  ./a.out
+  152  gcc scan.c
+  153  cd ..
+  154  cd week11
+  155  gcc scan.c
+  156  ./a.out
+  157  gcc semaphore.c -o semaphore -lpthread
+  158  clear
+  159  gcc semaphore.c -o semaphore -lpthread
+  160  semaphore
+  161  ./semaphore
+  162  gcc semaphore.c -o semaphore -lpthread
+  163  ./semaphore
+  164  gcc semaphore.c -o semaphore -lpthread
+  165  ./semaphore
+  166  gcc banker.c
+  167  gcc banker.c -o banker
+  168  ./banker
+  169  gcc banker.c -o banker
+  170  ./banker
+  171  gcc banker.c -o banker
+  172  ./banker
+  173  gcc fifo.c
+  174  ./a.out
+  175  gcc fifo.c
+  176  ./a.out
+  177  gcc fifo.c
+  178  ./a.out
+  179  gcc fifo.c
+  180  ./a.out
+  181  gcc fifo.c
+  182  ./a.out
+  183  gcc fifo.c
+  184  ./a.out
+  185  gcc fifo.c
+  186  ./a.out
+  187  gcc fifo.c
+  188  ./a.out
+  189  gcc fifo.c
+  190  ./a.out
+  191  gcc fifo.c
+  192  ./a.out
+  193  gcc fifo.c
+  194  ./a.out
+  195  gcc fifo.c
+  196  ./a.out
+  197  gcc fifo.c -lpthread
+  198  ./a.out
+  199  gcc fifo.c -lpthread
+  200  ./a.out
+  201  gcc lru.c -lpthread
+  202  ./a.out
+  203  gcc lru.c -lpthread
+  204  ./a.out
+  205  gcc lru.c -lpthread
+  206  ./a.out
+  207  #include <pthread.h>
+  208  int pages[100], frames[10], times[10];
+  209  int page_n, frame_n;
+  210  int hits = 0, faults = 0;
+  211  void* input(void *args) {
+  212  }
+  213  void* process(void *args) {
+  214  gcc lru.c -lpthread
+  215  ./a.out
+  216  #include <pthread.h>
+  217  int pages[100], frames[10], times[10];
+  218  int page_n, frame_n;
+  219  int hits = 0, faults = 0;
+  220  void* input(void *args) {
+  221  }
+  222  void* process(void *args) {
+  223  gcc lru.c -lpthread
+  224  ./a.out
+  225  #include <pthread.h>
+  226  int pages[100], frames[10], times[10];
+  227  int page_n, frame_n;
+  228  int hits = 0, faults = 0;
+  229  void* input(void *args) {
+  230  }
+  231  void* process(void *args) {
+  232  gcc lru.c -lpthread
+  233  ./a.out
+  234  gcc lru.c -lpthread
+  235  ./a.out
+  236  gcc lru.c -lpthread
+  237  ./a.out
+  238  gcc optimal.c -lpthread
+  239  ./a.out
+  240  gcc optimal.c -lpthread
+  241  ./a.out
+  242  gcc optimal.c -lpthread
+  243  ./a.out
+  244  gcc optimal.c -lpthread
+  245  ./a.out
+  246  gcc optimal.c -lpthread
+  247  ./a.out
+  248  gcc fifi_v.c
+  249  ./a.out
+  250  gcc fifi_v.c
+  251  ./a.out
+  252  gcc fifi_v.c
+  253  ./a.out
+  254  gcc fcfs.c
+  255  ./a.out
+  256  gcc fcfs.c
+  257  ./a.out
+  258  gcc sstf.c -lpthread
+  259  ./a.out
+  260  gcc sstf.c -lpthread
+  261  ./a.out
+  262  gcc scan.c
+  263  ./a.out
+  264  gcc scan.c
+  265  ./a.out
+  266  gcc look.c
+  267  ./a.out
+  268  gcc look.c
+  269  ./a.out
+  270  gcc look.c
+  271  ./a.out
+  272  gcc lru.c -lpthread
+  273  ./a.out
+  274  gcc lru.c -lpthread
+  275  ./a.out
+  276  sh dir.sh
+  277  sh another.sh
+  278  chmod +x .husky/commit-msg
+  279  echo "\nCommit Two" >> cherry.txt
+  280  echo -e "\nCommit Two" >> cherry.txt
+  281  git add .
+  282  git commit -m "second commit"
+  283  git config --global user.email "jithesh.coder@gmail.com"
+  284  git config --global user.name "jithesh-poojari"
+  285  git commit -m "second commit"
+  286  echo -e "\nCommit Three" >> cherry.txt
+  287  git add .
+  288  git commit -m "three commit"
+  289  echo -e "\nCommit Four" >> cherry.txt
+  290  git add .
+  291  git commit -m "four commit"
+  292  echo -e "\nCommit Five" >> cherry.txt
+  293  git add .
+  294  git commit -m "five commit"
+  295  git push
+  296  git log
+  297  git checkout main
+  298  pwd
+  299  ls
+  300  ls -l
+  301  ls -a
+  302  ls -la
+  303  clear
+  304  cat cherry.txt
+  305  less cherry.txt
+  306  head cherry.txt
+  307  tail -f cherry.txt
+  308  nano cherry.txt
+  309  echo -e "New Chnage" >> cherry.txt
+  310  git checkout main
+  311  uptime
+  312  wall hello
+  313  who
+  314  whois
+  315  whatis ls
+  316  ip address
+  317  awk
+  318  cal
+  319  history >> history.txt
